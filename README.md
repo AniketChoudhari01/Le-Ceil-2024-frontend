@@ -5,13 +5,13 @@ It includes a modern dark-themed interface featuring a countdown timer, animated
 
 ## 📚 Table of Contents
 
-- [Features](#features)
-- [📸 Screenshots](#screenshots)
-- [🎬 Demo Video](#demo-video)
-- [🗂 Tech Stack](#tech-stack)
-- [🚀 How to Run](#how-to-run)
+- [✨Features](#-features)
+- [📸 Screenshots](#-screenshots)
+- [🎬 Demo Video](#-demo-video)
+- [🗂 Tech Stack](#-tech-stack)
+- [🚀 How to Run](#-how-to-run)
 
-## Features
+## ✨ Features
 
 - 🌌 Dark theme design
 - 🧭 Responsive Navbar

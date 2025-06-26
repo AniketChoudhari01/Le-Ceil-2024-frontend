@@ -5,15 +5,13 @@ It includes a modern dark-themed interface featuring a countdown timer, animated
 
 ## 📚 Table of Contents
 
-- [✨ Features](#features)
-- [📸 Preview Screenshots](#preview-screenshots)
+- [Features](#features)
+- [📸 Screenshots](#screenshots)
 - [🎬 Demo Video](#demo-video)
-- [🛠 Tech Stack](#tech-stack)
+- [🗂 Tech Stack](#tech-stack)
 - [🚀 How to Run](#how-to-run)
 
-
-
-## ✨ Features
+## Features
 
 - 🌌 Dark theme design
 - 🧭 Responsive Navbar
@@ -33,11 +31,9 @@ It includes a modern dark-themed interface featuring a countdown timer, animated
 
 ![Screenshot 2025-06-26 173009](https://github.com/user-attachments/assets/0b6db57d-f6c5-4d69-bf89-1a975431be08)
 
-### 🎬 Demo Video
+## 🎬 Demo Video
 
 [![Watch Demo](https://img.youtube.com/vi/2HqXAH-s0U0/hqdefault.jpg)](https://youtu.be/2HqXAH-s0U0)
-
-[![Watch the demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/hqdefault.jpg)](https://youtu.be/2HqXAH-s0U0)
 
 > 🔗 Click the image to watch a short demo of the website interface.
 

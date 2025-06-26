@@ -1,0 +1,137 @@
+/* Reset and global settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0e0e0e;
+    color: #f0f0f0;
+    overflow-x: hidden;
+}
+
+/* Navbar styles */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: rgba(10, 10, 10, 0.95);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(6px);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    width:100%;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 0 10px #9400d3;
+    transition: text-shadow 0.3s ease;
+    background-color: #0e0e0e;
+}
+
+.logo:hover {
+    text-shadow: 0 0 20px #ff00ff, 0 0 30px #8a2be2;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-items {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s ease;
+    background-color: #0e0e0e;}
+
+.navbar-items::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #8a2be2, #ff00ff);
+    transition: width 0.3s ease;
+}
+
+ul a{
+    background-color: green;
+}
+.navbar-items:hover {
+    color: #fff;
+}
+
+.navbar-items:hover::after {
+    width: 100%;
+}
+
+/* Hamburger styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #ccc;
+    transition: all 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: rgba(20, 20, 20, 0.95);
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        padding: 0;
+    }
+
+    nav ul.show {
+        max-height: 400px;
+        padding: 1rem 2rem;
+    }
+
+    nav ul li {
+        width: 100%;
+        padding: 0.8rem 0;
+    }
+
+    .navbar-items {
+        width: 100%;
+        display: block;
+    }
+
+    body.no-scroll {
+        overflow: hidden;
+    }
+}

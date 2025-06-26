@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#Home" class="logo">Le Ciel 2k24</a>
+
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <ul>
+                <li><a class="navbar-items" href="#home">Home</a></li>
+                <li><a class="navbar-items" href="#events">Events</a></li>
+                <li><a class="navbar-items" href="#schedule">Schedule</a></li>
+                <li><a class="navbar-items" href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <img class="rounded-full object-contain" src="https://ugc.production.linktr.ee/PioleVrKTZSnd8a9To75_cMjJf55b5PS4sv32?io=true&amp;size=avatar-v3_0" alt="" style="width:96px;height:96px" role="presentation" data-testid="ProfileImage" crossorigin="anonymous"> -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('nav ul');
+
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('show');
+                document.body.classList.toggle('no-scroll'); // Optional: Prevent body scroll when menu is open
+            });
+        });
+    </script>
+</body>
+
+</html>
